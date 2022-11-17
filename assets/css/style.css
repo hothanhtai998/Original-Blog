@@ -1,0 +1,114 @@
+/* #### Header Area Start ####*/
+#header-area {
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+/* Top Header */
+.top-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.top-title {
+  padding: 10px 15px;
+}
+.social-icon {
+  padding: 14px;
+}
+.social-icon a {
+  color: var(--black);
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 19.5px;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+}
+
+/* Logo */
+.logo-area {
+  justify-content: center;
+  height: 100px;
+
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* Navigation */
+.nav-area {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  padding: 14px;
+}
+
+.subscribe-btn {
+  height: 40px;
+  align-items: center;
+  line-height: 40px;
+  min-width: 140px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: #0d0d0d;
+  /* outline: rgba(255, 0, 0, 0.8) dashed 1px; */
+
+  transition: color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s;
+  transition-duration: 500ms;
+}
+
+.nav-link {
+  display: none;
+  flex: 1;
+}
+
+.nav-link li a {
+  height: 35px;
+  line-height: 34px;
+
+  text-transform: uppercase;
+
+  font-size: 1.4rem;
+  padding: 0 12px;
+}
+.search-btn {
+}
+/* #### Header Area End #### */
+
+/* #### Slider Area Start #### */
+#slider {
+  display: flex;
+  /* width: 5000px; */
+}
+.slides img {
+  width: 145px;
+  height: 250px;
+  margin-left: 30px;
+}
+
+/* #### Slider Area End #### */
+
+/* #### Content Area Start #### */
+#content-area {
+  padding: 100px 0;
+}
+.sub-content-area {
+}
+.main-content-area {
+}
+.blog-area {
+}
+.blog-img {
+  width: 100%;
+}
+.aside-area {
+}
+/* #### Content Area End #### */
+
+/* #### Footer Area Start #### */
+#footer-area {
+}
+/* #### Footer Area End #### */
