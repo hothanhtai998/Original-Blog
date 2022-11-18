@@ -30,11 +30,11 @@
     height: 65px;
   }
   .top-title {
-    padding: 0;
+    padding: 3px 0;
   }
   .social-icon {
     text-align: right;
-    padding: 0;
+    padding: 3px 0;
   }
 
   /* Logo */
@@ -45,16 +45,22 @@
   /* Navigation */
   .nav-area {
     height: 100px;
-
     padding: 0 12px;
   }
 
   .nav-link {
     display: flex;
+    justify-content: flex-end;
   }
 
-  .search-btn {
+  .nav-link li {
+    padding: 6px 0;
   }
+
+  .search-input {
+    display: block;
+  }
+
   /* #### Header Area End #### */
 
   /* #### Slider Area Start #### */
@@ -64,8 +70,58 @@
   }
   .slides img {
     height: 670px;
-    width: 713px;
+    min-width: 713px;
   }
 
   /* #### Slider Area End #### */
+
+  /* #### Content Area Start #### */
+  /* ## Sub content Area ## */
+  .col-item {
+    padding-top: 16px;
+  }
+  /* ============================================================================================== */
+
+  /* ## Main content Area ## */
+  .main-content-area {
+    margin-top: 100px;
+  }
+  /* Blog Area */
+  .blog-img {
+    padding: 0;
+    margin-top: 0;
+  }
+  .col-item span,
+  .col-item span a {
+    margin-right: 30px;
+  }
+
+  .blog-item {
+    margin-bottom: 50px;
+  }
+  .blog-item + button {
+    margin-left: 0;
+  }
+
+  /* #### Content Area End #### */
+  #content-area {
+    padding: 100px 0;
+  }
+  .aside-area {
+    margin-top: 0;
+    padding: 0;
+  }
+  /* ################### */
+  #back-to-top-btn {
+    bottom: 60px;
+    right: 60px;
+  }
+  /* #### Footer area */
+  .list-image img {
+    width: 230px;
+  }
+
+  .copy-right {
+    padding: 60px 0px;
+  }
 }

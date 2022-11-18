@@ -5,23 +5,71 @@
 }
 
 :root {
+  --primary: #30336b;
   --white: #fff;
   --black: #000;
 
   --text-color: #4f4d4d;
+  --sub-text-color: #a1a1a1;
+  --description-text-color: #878787;
 
   /*  */
   --header-height: 335px;
   --max-width: 1140px;
+
+  /* font family */
 }
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+/* @font-face {
+  font-family: Helvetica;
+  src: url(../font/helveticaneuebold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/helveticaneuemedium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/helvetica-neue-regular.ttf);
+  font-weight: 400;
+} */
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -34,7 +82,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #30336b;
+  color: var(--primary);
 }
 
 button {
@@ -52,7 +100,7 @@ button {
 
 button:hover {
   color: #ffffff;
-  background-color: #30336b;
+  background-color: var(--primary);
   border-color: rgb(48, 51, 107);
   transition-duration: 500ms;
 }
