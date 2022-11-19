@@ -15,8 +15,6 @@
 /* PC: */
 @media (min-width: 1113px) {
   /* #### Header Area Start ####*/
-  #header-area {
-  }
 
   .top-header,
   .logo-area,
@@ -43,9 +41,24 @@
   }
 
   /* Navigation */
+  .nav-container {
+    width: 100%;
+    background-color: var(--white);
+    left: 0;
+  }
+  .nav-container.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 15%);
+  }
+  .nav-container.sticky .nav-area {
+    padding: 15px 12px;
+  }
   .nav-area {
-    height: 100px;
-    padding: 0 12px;
+    padding: 30px 12px;
   }
 
   .nav-link {
@@ -54,7 +67,52 @@
   }
 
   .nav-link li {
+    position: relative;
     padding: 6px 0;
+  }
+
+  .nav-link li:hover .sub-nav {
+    display: block;
+  }
+
+  /* Sub navigation */
+  .sub-nav {
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: 0;
+    min-width: 180px;
+    background-color: var(--white);
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+    transition: all 0.3s ease 0s;
+    z-index: 3;
+  }
+  .sub-nav::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -20px;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .sub-nav li {
+    border-bottom: 0.989583px solid rgba(242, 244, 248, 0.5);
+    padding: 3px;
+    cursor: pointer;
+  }
+  .sub-nav li:hover {
+    background-color: #f9f9f9;
+  }
+  .sub-nav li a {
+    line-height: 34px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4f4d4d;
+    transition: all 0.5s ease 0s;
+    transition-duration: 500ms;
+    cursor: pointer;
   }
 
   .search-input {
@@ -66,13 +124,24 @@
   /* #### Slider Area Start #### */
   #slider {
     display: flex;
-    /* width: 5000px; */
-  }
-  .slides img {
-    height: 670px;
-    min-width: 713px;
+    justify-content: center;
   }
 
+  .slides {
+    /* position: relative; */
+    width: 786px;
+    height: 670px;
+  }
+  .slider-btn-left,
+  .slider-btn-right {
+    top: 70%;
+  }
+  .slider-btn-left {
+    left: 7%;
+  }
+  .slider-btn-right {
+    right: 7%;
+  }
   /* #### Slider Area End #### */
 
   /* #### Content Area Start #### */

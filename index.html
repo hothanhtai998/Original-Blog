@@ -16,18 +16,31 @@
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/modal.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Script -->
-    <script defer src="assets/js/custom.js"></script>
+    <script defer src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/header.js"></script>
+    <script defer src="assets/js/socialicon.js"></script>
+    <script defer src="assets/js/search.js"></script>
+    <script defer src="assets/js/slider.js"></script>
+    <!-- <script defer type="module" src="assets/js/index.js"></script> -->
   </head>
   <body>
     <!-- Mobile first -->
 
     <!-- Preloader -->
-    <div id="preloader"></div>
-    <a href="#" id="back-to-top-btn">Top</a>
+    <div id="preloader">
+      <div class="preload-content">
+        <div id="original-load"></div>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a id="back-to-top-btn">Top</a>
 
     <!-- #### Header area start ####-->
     <header id="header-area">
@@ -35,63 +48,72 @@
         <!-- Top Header Area-->
         <div class="row">
           <div class="top-header col col-sm-12 col-md-12 col-lg-12">
-            <div class="top-title col col-sm-12 col-md-8 col-lg-8">
-              Hello World
-            </div>
+            <div class="top-title col col-sm-12 col-md-8 col-lg-8"></div>
             <div class="social-icon col col-sm-12 col-md-4 col-lg-4">
-              <a><i class="fa-brands fa-pinterest"></i></a>
-              <a><i class="fa-brands fa-facebook-f"></i></a>
-              <a><i class="fab fa-twitter"></i></a>
-              <a><i class="fab fa-dribbble"></i></a>
-              <a><i class="fab fa-behance"></i></a>
-              <a><i class="fab fa-linkedin-in"></i></a>
+              <a data-name="Pinterest" class="brand-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a data-name="Facebook" class="brand-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a data-name="Twitter" class="brand-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a data-name="Dribbble" class="brand-icon"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+              <a data-name="Behance" class="brand-icon"
+                ><i class="fab fa-behance"></i
+              ></a>
+              <a data-name="Linkedin" class="brand-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
           </div>
         </div>
-
         <!-- Logo Area-->
         <div class="logo-area">
           <img src="./assets/img/core-img/logo.png" alt="logo-original" />
         </div>
 
         <!-- Nav Area-->
-        <nav class="nav-area">
-          <button class="subscribe-btn">subscribe</button>
-          <ul class="nav-link">
-            <li><a href="#">home</a></li>
-            <li><a href="#">page</a></li>
-            <li><a href="#">category</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-          <form>
-            <input
-              class="search-input"
-              type="text"
-              placeholder="Search something ..."
-            />
-          </form>
-        </nav>
+        <div class="nav-container">
+          <nav class="nav-area">
+            <button class="subscribe-btn">subscribe</button>
+            <ul class="nav-link">
+              <li><a href="">home</a></li>
+              <li>
+                <a href="#">page</a>
+                <ul class="sub-nav">
+                  <li><a href="">Home</a></li>
+                  <li><a href="./about-us.html">About us</a></li>
+                  <li><a href="#">Single post</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Coming soon</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">category</a></li>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+            <form>
+              <input
+                class="search-input"
+                type="text"
+                placeholder="Search something ..."
+              />
+            </form>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- #### Header area end ####-->
 
     <!-- #### Slider area start ####-->
     <div id="slider">
-      <div class="slides">
-        <img src="./assets/img/bg-img/b1.jpg" alt="b1" />
-      </div>
-      <div class="slides">
-        <img src="./assets/img/bg-img/b2.jpg" alt="b2" />
-      </div>
-      <div class="slides">
-        <img src="./assets/img/bg-img/b3.jpg" alt="b3" />
-      </div>
-      <div class="slides">
-        <img src="./assets/img/bg-img/b5.jpg" alt="b5" />
-      </div>
-      <!-- <button class="slider__btn slider__btn--left">&larr;</button>
-      <button class="slider__btn slider__btn--right">&rarr;</button> -->
+      <button class="slider-btn-left">&lt;</button>
+      <button class="slider-btn-right">&gt;</button>
     </div>
     <!-- #### Slider area end ####-->
 

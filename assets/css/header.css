@@ -1,0 +1,140 @@
+/* #### Header Area Start ####*/
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+/* Top Header */
+.top-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.top-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 21px;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+  padding: 10px 15px;
+}
+.social-icon {
+  padding: 14px;
+}
+.social-icon a {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: var(--black);
+  cursor: pointer;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+  padding: 5px 15px;
+}
+
+.icon-holder {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  left: -20px;
+  height: 24px;
+  line-height: 21px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 10px;
+}
+.icon-holder::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -16px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--black) transparent;
+}
+
+/* Logo */
+.logo-area {
+  justify-content: center;
+  height: 100px;
+
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* Navigation */
+.nav-area {
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  padding: 14px;
+}
+
+.subscribe-btn {
+  height: 40px;
+  align-items: center;
+  line-height: 40px;
+  min-width: 140px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: #0d0d0d;
+
+  transition: color 0.5s ease-in-out 0s, background-color 0.5s ease-in-out 0s;
+  transition-duration: 500ms;
+}
+
+.nav-link {
+  display: none;
+  flex: 1;
+}
+
+.nav-link li a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 24px;
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+  padding: 10px 12px;
+}
+
+/* search */
+.search-input {
+  position: relative;
+  display: none;
+  width: 20px;
+  border-radius: 50%;
+
+  margin-left: 50px;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+}
+
+.search-input::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--black);
+}
+
+.search-input.active {
+  width: 270px;
+  border: 2px solid var(--black);
+  border-radius: 1000px;
+
+  padding: 9px;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+}
+/* #### Header Area End #### */
