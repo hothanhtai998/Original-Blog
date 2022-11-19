@@ -15,7 +15,6 @@
 /* PC: */
 @media (min-width: 1113px) {
   /* #### Header Area Start ####*/
-
   .top-header,
   .logo-area,
   .nav-area {
@@ -118,9 +117,24 @@
   .search-input {
     display: block;
   }
-
   /* #### Header Area End #### */
 
+  /* #### Footer Area End #### */
+  #back-to-top-btn {
+    bottom: 60px;
+    right: 60px;
+  }
+  /* #### Footer area */
+  .list-image img {
+    width: 230px;
+  }
+
+  .copy-right {
+    padding: 60px 0px;
+  }
+  /* #### Footer Area End #### */
+
+  /** index.html */
   /* #### Slider Area Start #### */
   #slider {
     display: flex;
@@ -180,17 +194,28 @@
     margin-top: 0;
     padding: 0;
   }
-  /* ################### */
-  #back-to-top-btn {
-    bottom: 60px;
-    right: 60px;
-  }
-  /* #### Footer area */
-  .list-image img {
-    width: 230px;
+
+  /** about-us.html */
+  .slide-main-title {
+    position: absolute;
+    top: 33%;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
   }
 
-  .copy-right {
-    padding: 60px 0px;
+  .blog-fact {
+    margin-top: 0;
+    padding: 100px 0;
+  }
+
+  .item + .item {
+    margin-top: 0;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
   }
 }

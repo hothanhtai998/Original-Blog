@@ -2,24 +2,16 @@
 const sliderImg = document.getElementById('slider');
 
 // số lượng ảnh của slider
-let imgNumber = 3;
+let imgNumber = sliderImg.dataset.number;
 
 for (let i = 0; i < imgNumber; i++) {
-  const divElement = document.createElement('div');
+  const slidesElement = document.createElement('div');
 
-  divElement.classList.add('slides');
+  slidesElement.classList.add('slides');
 
-  sliderImg.appendChild(divElement);
+  sliderImg.appendChild(slidesElement);
 
-  divElement.style.backgroundImage = `url(./assets/img/bg-img/b${i + 1}.jpg)`;
+  slidesElement.style.backgroundImage = `url(./assets/img/bg-img/b${
+    i + 1
+  }.jpg)`;
 }
-
-//#### 1 slider ################
-const singleSliderImg = document.getElementById('single-slider');
-const divElement = document.createElement('div');
-
-divElement.classList.add('slide');
-
-sliderImg.appendChild(divElement);
-
-divElement.style.backgroundImage = `url(./assets/img/bg-img/b1.jpg)`;
