@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Original Blog</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/core-img/favicon.ico" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/aside-content.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- Script -->
+    <script defer src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/header.js"></script>
+    <script defer src="assets/js/socialicon.js"></script>
+    <script defer src="assets/js/search.js"></script>
+    <!-- <script defer type="module" src="assets/js/index.js"></script> -->
+  </head>
+  <body>
+    <!-- Mobile first -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="preload-content">
+        <div id="original-load"></div>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a id="back-to-top-btn">Top</a>
+
+    <!-- #### Header area start ####-->
+    <header id="header-area">
+      <div class="grid">
+        <!-- Top Header Area-->
+        <div class="row">
+          <div class="top-header col col-sm-12 col-md-12 col-lg-12">
+            <div class="top-title col col-sm-12 col-md-8 col-lg-8"></div>
+
+            <div class="social-icon col col-sm-12 col-md-4 col-lg-4">
+              <a data-name="Pinterest" class="brand-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+              <a data-name="Facebook" class="brand-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a data-name="Twitter" class="brand-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a data-name="Dribbble" class="brand-icon"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+              <a data-name="Behance" class="brand-icon"
+                ><i class="fab fa-behance"></i
+              ></a>
+              <a data-name="Linkedin" class="brand-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Logo Area-->
+        <div class="logo-area">
+          <img src="./assets/img/core-img/logo.png" alt="logo-original" />
+        </div>
+
+        <!-- Nav Area-->
+        <div class="nav-container">
+          <nav class="nav-area">
+            <button class="subscribe-btn">subscribe</button>
+            <ul class="nav-link">
+              <li><a href="./index.html">home</a></li>
+              <li>
+                <a href="#">page</a>
+                <ul class="sub-nav">
+                  <li><a href="">Home</a></li>
+                  <li><a href="./about-us.html">About us</a></li>
+                  <li><a href="./post.html">Single post</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./comingsoon.html">Coming soon</a></li>
+                </ul>
+              </li>
+              <li><a href="./about-us.html"">about us</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+            <form>
+              <input class="search-input" type="text" />
+            </form>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- #### Header area end ####-->
+
+    <!-- #### Content area start ####-->
+    <main id="content-area">
+      <div class="grid wide">
+        <!-- Main content area -->
+        <section class="main-content-area">
+          <div class="row">
+            <!-- Blog Area-->
+            <div class="blog-area col col-sm-12 col-mg-12 col-lg-9">
+              <div class="col-item">
+                <h2 style="margin-bottom: 40px">Get in Touch</h2>
+                <form class="contact-form" action="">
+                  <label class="name-label" for="">Name</label>
+                  <input class="input-form" type="text" required />
+                  <label class="email-label" for="">Email</label>
+                  <input class="input-form" type="email" required />
+                  <label class="subject-label" for="">Subject</label>
+                  <input class="input-form" type="text" required />
+                  <label class="message-label" for="">Message</label>
+                  <input class="input-form" type="text" required />
+                  <button class="reply-btn large-button">Reply</button>
+                </form>
+              </div>
+            </div>
+            <!-- Aside Area-->
+            <aside class="aside-area col col-sm-12 col-lg-3">
+              <div class="aside-search">
+                <input class="input-form" type="text" placeholder="Search" />
+              </div>
+              <div class="subscribe">
+                <h3>Subscribe to my newsletter</h3>
+                <input
+                  class="input-form"
+                  type="email"
+                  placeholder="Your e-mail here"
+                  required
+                />
+                <button class="large-button">Subscribe</button>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- #### Main content area end ####-->
+
+    <!-- Subscribe modal -->
+    <div class="modal"></div>
+
+    <!-- #### Footer area start ####-->
+    <footer id="footer-area">
+      <div class="instagram grid wide">
+        <div class="heading"><h5>Follow us @ Instagram</h5></div>
+        <div class="list-image">
+          <img src="./assets/img/instagram-img/1.png" alt="ins1" />
+          <img src="./assets/img/instagram-img/2.png" alt="ins2" />
+          <img src="./assets/img/instagram-img/3.png" alt="ins3" />
+          <img src="./assets/img/instagram-img/4.png" alt="ins4" />
+          <img src="./assets/img/instagram-img/5.png" alt="ins5" />
+          <img src="./assets/img/instagram-img/6.png" alt="ins6" />
+          <img src="./assets/img/instagram-img/7.png" alt="ins7" />
+        </div>
+        <div class="copy-right">
+          <!-- <div class="social-icon col col-sm-12 col-md-4 col-lg-4">
+            <a><i class="fa-brands fa-pinterest"></i></a>
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-dribbble"></i></a>
+            <a><i class="fab fa-behance"></i></a>
+            <a><i class="fab fa-linkedin-in"></i></a>
+          </div> -->
+          Copyright ©2022 All rights reserved
+        </div>
+      </div>
+    </footer>
+    <!-- #### Footer area end ####-->
+  </body>
+</html>

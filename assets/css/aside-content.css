@@ -14,6 +14,7 @@
 }
 
 .input-form {
+  position: relative;
   width: 100%;
   color: #bbbec1;
   border: none;
@@ -25,11 +26,35 @@
 
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .input-form:focus {
   color: var(--black);
   border-bottom: 1px solid var(--black);
+}
+.contact-form {
+  position: relative;
+}
+.name-label,
+.email-label,
+.subject-label,
+.message-label {
+  color: #787878;
+  position: absolute;
+  top: 16px;
+  z-index: 9;
+}
+.email-label {
+  top: 86px;
+}
+.subject-label {
+  top: 156px;
+}
+.message-label {
+  top: 226px;
+}
+.input-form:focus .name-label {
+  transform: translateY(40px);
 }
 .subscribe .input-form {
   font-style: italic;
