@@ -87,9 +87,9 @@ a:hover {
 }
 
 button {
+  text-transform: uppercase;
   color: var(--black);
   background-color: var(--white);
-  text-transform: uppercase;
   border: 1px solid #dcdcdc;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px;
   cursor: pointer;

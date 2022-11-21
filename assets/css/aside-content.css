@@ -4,9 +4,9 @@
   padding: 0 20px;
 }
 .aside-area h3 {
-  color: #000000;
   font-size: 1.8rem;
   text-align: left;
+  color: #000000;
   margin-bottom: 20px;
 }
 .aside-area div + div {
@@ -16,10 +16,10 @@
 .input-form {
   position: relative;
   width: 100%;
+
   color: #bbbec1;
   border: none;
   border-bottom: 1px solid #bbbec1;
-
   outline: none;
 
   padding: 12px 0;
@@ -39,9 +39,9 @@
 .email-label,
 .subject-label,
 .message-label {
-  color: #787878;
   position: absolute;
   top: 16px;
+  color: #787878;
   z-index: 9;
 }
 .email-label {
@@ -59,8 +59,8 @@
 .subscribe .input-form {
   font-style: italic;
   border: 1px solid #787878;
-  padding: 12px 20px;
   margin-bottom: 10px;
+  padding: 12px 20px;
 }
 .post-item {
   display: flex;
@@ -72,15 +72,15 @@
   margin-bottom: 8px;
 }
 .last-post-info span {
-  color: #878787;
   font-size: 1.1rem;
   text-transform: uppercase;
+  color: #878787;
 }
 .last-post-info li a {
-  color: var(--black);
+  line-height: 16px;
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 16px;
+  color: var(--black);
 }
 .aside-tag {
   display: flex;
@@ -89,9 +89,9 @@
 .aside-tag a {
   font-size: 1.2rem;
   border: 1px solid #c5c5c5;
-  padding: 12px 35px;
   margin-right: 8px;
   margin-top: 8px;
+  padding: 12px 35px;
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
 }

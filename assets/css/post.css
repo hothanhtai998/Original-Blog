@@ -12,12 +12,12 @@
   margin-bottom: 40px;
 }
 .col-item h5 {
-  color: var(--black);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.3;
-  margin-bottom: 50px;
   text-align: left;
+  color: var(--black);
+  margin-bottom: 50px;
 }
 
 .sub-title,
@@ -67,14 +67,13 @@
 }
 
 .comment-name a {
-  color: #4f4d4d;
-
-  font-size: 1.4rem !important;
   line-height: 28px;
+  font-size: 1.4rem !important;
 
-  margin-bottom: 15px;
   text-align: left;
   text-decoration: none;
+  color: #4f4d4d;
+  margin-bottom: 15px;
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
 }
@@ -85,13 +84,12 @@
   margin-top: 15px;
 }
 .post-reply a {
-  color: var(--black);
-  font-size: 11px;
   line-height: 16.5px;
+  font-size: 11px;
   font-weight: 500;
-
-  text-align: left;
   text-transform: uppercase;
+  text-align: left;
+  color: var(--black);
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
 }

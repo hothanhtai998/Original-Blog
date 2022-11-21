@@ -10,10 +10,10 @@
   margin: 0 auto;
 }
 .top-title {
+  line-height: 21px;
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 21px;
   padding: 10px 15px;
 }
 
@@ -21,14 +21,14 @@
   padding: 14px;
 }
 .social-icon a {
-  font-size: 13px;
   line-height: 19.5px;
+  font-size: 13px;
   color: var(--black);
   cursor: pointer;
 
+  padding: 5px 15px;
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
-  padding: 5px 15px;
 }
 
 .icon-holder {
@@ -74,11 +74,12 @@
 }
 
 .subscribe-btn {
-  height: 40px;
   align-items: center;
-  line-height: 40px;
+  height: 40px;
   min-width: 140px;
+  line-height: 40px;
   text-transform: uppercase;
+
   color: var(--white);
   background-color: #0d0d0d;
 
@@ -92,13 +93,14 @@
 }
 
 .nav-link li a {
-  text-transform: uppercase;
+  line-height: 24px;
   font-size: 1.4rem;
   font-weight: 600;
-  line-height: 24px;
+  text-transform: uppercase;
+  padding: 10px 12px;
+
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
-  padding: 10px 12px;
 }
 
 /* search */
@@ -109,7 +111,6 @@
   border-radius: 50%;
 
   margin-left: 50px;
-
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
 }

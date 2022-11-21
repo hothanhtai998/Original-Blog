@@ -9,9 +9,7 @@
 
 .slides {
   width: 145px;
-
   height: 250px;
-
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,42 +22,41 @@
   position: absolute;
 
   animation: fadeInUp 1s ease 0s 1 normal both running;
-  /* left: 50%; */
   top: 30%;
-  transform: translateY(-30%);
-  background-color: var(--black);
-  border-radius: 2px;
-  color: var(--white);
+  line-height: 15px;
   font-size: 10px;
   letter-spacing: 2px;
-  line-height: 15px;
   text-align: center;
   text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 2px;
+  padding: 3px 10px;
+
+  transform: translateY(-30%);
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
-  padding: 3px 10px;
 }
 
 .slide-main-title {
   position: absolute;
   top: 45%;
-  transform: translateY(-45%);
   width: 5%;
-
-  background-color: var(--black);
-  color: var(--white);
-  font-size: 1.1rem;
-  font-weight: 600;
   line-height: 20px;
 
+  font-size: 1.1rem;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  animation: fadeInUp 1s ease 0s 1 normal both running;
-
-  transition: all 0.5s ease 0s;
-  transition-duration: 500ms;
+  color: var(--white);
+  background-color: var(--black);
   z-index: 3;
   padding: 4px;
+
+  animation: fadeInUp 1s ease 0s 1 normal both running;
+  transform: translateY(-45%);
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
 }
 
 .slider-btn-left,

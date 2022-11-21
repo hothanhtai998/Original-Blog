@@ -1,4 +1,4 @@
-x/* #### Content Area Start #### */
+/* #### Content Area Start #### */
 #content-area {
   padding-top: 100px;
   /* padding-bottom: 40px; */
@@ -9,21 +9,22 @@ x/* #### Content Area Start #### */
   padding: 15px;
 }
 .col-item p:first-child {
-  color: var(--sub-text-color);
+  line-height: 16.5px;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 3px;
-  line-height: 16.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: var(--sub-text-color);
 }
 
 .col-item a {
-  color: var(--black);
+  line-height: 31.2px;
   font-size: 2.3rem;
   font-weight: 600;
-  line-height: 31.2px;
+  color: var(--black);
   margin-bottom: 30px;
+
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
 }
@@ -32,9 +33,9 @@ x/* #### Content Area Start #### */
   transition-duration: 500ms;
 }
 .col-item a + p {
-  color: var(--description-text-color);
-  font-weight: 600;
   line-height: 28px;
+  font-weight: 600;
+  color: var(--description-text-color);
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: left;
@@ -80,11 +81,11 @@ x/* #### Content Area Start #### */
 }
 .col-item span,
 .col-item span a {
-  color: var(--description-text-color);
   line-height: 24px;
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--description-text-color);
   margin-right: 20px;
 }
 .col-item span a {

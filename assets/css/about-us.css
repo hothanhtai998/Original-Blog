@@ -15,9 +15,9 @@
   position: absolute;
   top: 40%;
   width: 10%;
+  line-height: 30px;
   font-size: 30px;
   font-weight: 500;
-  line-height: 30px;
   padding: 4px 10px;
 }
 
@@ -32,25 +32,24 @@
   background-size: cover;
   background-attachment: fixed;
   z-index: 1;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 100px 0;
   padding: 100px 12px;
 }
 .bg-overlay::after {
-  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
   content: '';
+  width: 100%;
   height: 100%;
   left: 0px;
-  position: absolute;
   top: 0px;
-  width: 100%;
   z-index: -1;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .sub-title,
 .title,
 .description {
-  color: var(--white);
   text-align: center;
+  color: var(--white);
 }
 
 .info {
@@ -63,15 +62,15 @@
 }
 .item li:first-child,
 .item li span {
-  color: var(--white);
+  line-height: 72px;
   font-size: 72px;
   font-weight: 500;
-  line-height: 72px;
   text-align: center;
+  color: var(--white);
 }
 .item li:last-child {
-  color: var(--white);
-  font-size: 18px;
   line-height: 1.4;
+  font-size: 18px;
   text-align: center;
+  color: var(--white);
 }
