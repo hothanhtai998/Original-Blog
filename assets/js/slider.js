@@ -9,6 +9,8 @@ for (let i = 0; i < imgNumber; i++) {
 
   slidesElement.classList.add('slides');
 
+  slidesElement.style.padding = '10px';
+
   sliderImg.appendChild(slidesElement);
 
   slidesElement.style.backgroundImage = `url(./assets/img/bg-img/b${

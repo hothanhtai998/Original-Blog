@@ -1,0 +1,78 @@
+/* ## Aside content area ## */
+.aside-area {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+.aside-area h3 {
+  color: #000000;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.aside-area div + div {
+  margin-top: 60px;
+}
+
+.input-form {
+  width: 100%;
+  color: #bbbec1;
+  border: none;
+  border-bottom: 1px solid #bbbec1;
+
+  outline: none;
+
+  padding: 12px 0;
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+  margin-bottom: 10px;
+}
+.input-form:focus {
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+}
+.subscribe .input-form {
+  font-style: italic;
+  border: 1px solid #787878;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+.post-item {
+  display: flex;
+}
+.post-item img {
+  margin-right: 15px;
+}
+.last-post-info li {
+  margin-bottom: 8px;
+}
+.last-post-info span {
+  color: #878787;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.last-post-info li a {
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 16px;
+}
+.aside-tag {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aside-tag a {
+  font-size: 1.2rem;
+  border: 1px solid #c5c5c5;
+  padding: 12px 35px;
+  margin-right: 8px;
+  margin-top: 8px;
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+}
+
+.aside-tag a:hover {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}

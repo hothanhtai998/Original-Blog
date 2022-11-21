@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
     <link rel="stylesheet" href="./assets/css/about-us.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
@@ -28,6 +29,7 @@
     <script defer src="assets/js/socialicon.js"></script>
     <script defer src="assets/js/search.js"></script>
     <script defer src="assets/js/slider.js"></script>
+    <script defer src="assets/js/blogFact.js"></script>
     <!-- <script defer type="module" src="assets/js/index.js"></script> -->
   </head>
   <body>
@@ -88,9 +90,9 @@
                 <ul class="sub-nav">
                   <li><a href="./index.html">Home</a></li>
                   <li><a href="">About us</a></li>
-                  <li><a href="#">Single post</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Coming soon</a></li>
+                  <li><a href="./post.html">Single post</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./comingsoon.html">Coming soon</a></li>
                 </ul>
               </li>
 
@@ -102,7 +104,6 @@
               <input
                 class="search-input"
                 type="text"
-                placeholder="Search something ..."
               />
             </form>
           </nav>
@@ -112,7 +113,7 @@
     <!-- #### Header area end ####-->
 
     <!-- #### Single slider area start ####-->
-    <div id="slider" data-number="1">
+    <div id="slider" data-number="1" data-img="1">
       <p class="slide-main-title">ABOUT US</p>
     </div>
     <!-- #### Single slider area end ####-->
@@ -169,21 +170,21 @@
                 <p class="sub-title">lifestyle</p>
                 <h4 class="title">Welcome to this Lifestyle blog</h4>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum. Donec sagittis lacus sit amet augue sodales, vel cursus enim tristique. Maecenas vitae massa ut est consectetur sagittis quis vitae tortor. Sed et massa vel.</p>
-                <div class="info">
-                    <ul class="item">
-                        <li class="award">25</li>
+                <div class="blog-fact-info col col-lg-12">
+                    <ul class="item col col-lg-3">
+                        <li data-number="25" class="award">1</li>
                         <li>Awards won</li>
                     </ul>
-                    <ul class="item">
-                        <li class="follow">12K</li>
+                    <ul class="item col col-lg-3">
+                        <li> <span data-number="12" class="follow">1</span> k</li>
                         <li>FB Followers</li>
                     </ul>
-                    <ul class="item">
-                        <li class="member">9</li>
+                    <ul class="item col col-lg-3">
+                        <li data-number="9" class="member">1</li>
                         <li>Team members</li>
                     </ul>
-                    <ul class="item">
-                        <li class="day">16</li>
+                    <ul class="item col col-lg-3">
+                        <li data-number="16" class="day">1</li>
                         <li>Coffes/Day</li>
                     </ul>
                 </div>

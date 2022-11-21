@@ -14,11 +14,9 @@
   font-weight: 600;
   text-transform: uppercase;
   line-height: 21px;
-
-  transition: all 0.5s ease 0s;
-  transition-duration: 500ms;
   padding: 10px 15px;
 }
+
 .social-icon {
   padding: 14px;
 }
@@ -138,3 +136,13 @@
   transition-duration: 500ms;
 }
 /* #### Header Area End #### */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-24px);
+  }
+}

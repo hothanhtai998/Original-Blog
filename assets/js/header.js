@@ -1,4 +1,6 @@
-const topTitle = document.querySelector('.top-title');
+const topTitlePlace = document.querySelector('.top-title');
+
+let index = 0;
 
 const titleArr = [
   'Hello World!',
@@ -7,17 +9,16 @@ const titleArr = [
   'Hello Earth!',
 ];
 
-topTitle.innerHTML = titleArr[0];
-
-let index = 0;
+topTitlePlace.textContent = titleArr[0];
 
 // setInterval để sau mỗi 1.5s thì tiêu đề header sẽ thay đổi
 const times = setInterval(() => {
   if (index === titleArr.length - 1) {
-    topTitle.innerHTML = titleArr[index];
+    topTitlePlace.innerHTML = titleArr[index];
     index = 0;
   } else if (index < titleArr.length) {
-    topTitle.innerHTML = titleArr[index];
+    topTitlePlace.innerHTML = titleArr[index];
+    // topTitlePla.style.animation = 'slideUp linear 0.5s';
     index++;
   }
 }, 1500);
