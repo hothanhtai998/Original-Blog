@@ -12,7 +12,6 @@
     <link rel="icon" href="./assets/img/core-img/favicon.ico" />
 
     <!-- Style -->
-    <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -30,6 +29,7 @@
     <script defer src="assets/js/search.js"></script>
     <script defer src="assets/js/slider.js"></script>
     <script defer src="assets/js/blogFact.js"></script>
+    <script defer src="assets/js/modal.js"></script>
     <!-- <script defer type="module" src="assets/js/index.js"></script> -->
   </head>
   <body>
@@ -87,13 +87,13 @@
             <button class="subscribe-btn">subscribe</button>
             <ul class="nav-link">
 
-              <li><a href="">About us</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a class="active"  href="">About us</a></li>
+              <li><a href="./contact.html">Contact</a></li>
               <li>
                 <a href="#">page</a>
                 <ul class="sub-nav">
-                  <li><a href="./index.html">Home</a></li>
                   <li><a href="./post.html">Single post</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
                 </ul>
               </li>
               <li><a href="./comingsoon.html">Coming soon</a></li>
@@ -112,7 +112,6 @@
 
     <!-- #### Single slider area start ####-->
     <div id="slider" data-number="1" data-img="1">
-      <p class="slide-main-title">ABOUT US</p>
     </div>
     <!-- #### Single slider area end ####-->
 
@@ -170,19 +169,19 @@
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus. Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum. Donec sagittis lacus sit amet augue sodales, vel cursus enim tristique. Maecenas vitae massa ut est consectetur sagittis quis vitae tortor. Sed et massa vel.</p>
                 <div class="blog-fact-info col col-lg-12">
                     <ul class="item col col-lg-3">
-                        <li data-number="25" class="award">1</li>
+                        <li data-number="25" class="counter">1</li>
                         <li>Awards won</li>
                     </ul>
                     <ul class="item col col-lg-3">
-                        <li> <span data-number="12" class="follow">1</span> k</li>
+                        <li> <span data-number="12" class="counter">1</span> k</li>
                         <li>FB Followers</li>
                     </ul>
                     <ul class="item col col-lg-3">
-                        <li data-number="9" class="member">1</li>
+                        <li data-number="9" class="counter">1</li>
                         <li>Team members</li>
                     </ul>
                     <ul class="item col col-lg-3">
-                        <li data-number="16" class="day">1</li>
+                        <li data-number="16" class="counter">1</li>
                         <li>Coffes/Day</li>
                     </ul>
                 </div>
@@ -280,7 +279,25 @@
     <!-- #### Main content area end ####-->
 
     <!-- Subscribe modal -->
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="close-btn">x</div>
+        <div class="form-subscribe">
+          <form action="">
+            <label class="title" for="#email">Subscribe to my newsletter</label>
+            <input
+              type="email"
+              id="email"
+              class="input-form"
+              placeholder="Your E-mail here"
+              required
+            />
+            <button class="large-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- #### Footer area start ####-->
     <footer id="footer-area">

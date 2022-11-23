@@ -1,19 +1,18 @@
-const contentArea = document.querySelector('.sub-content-area');
-const blogItems = document.querySelectorAll('.blog-item');
+const blogRevealItems = document.querySelectorAll('.blog-reveal');
 
-const contentAreaPos = contentArea.getBoundingClientRect().height;
+function reveal() {
+  blogRevealItems.forEach((blogRevealItem) => {
+    const windowHeight = window.innerHeight;
 
-window.addEventListener('scroll', () => {
-  winPos = window.scrollY;
-  blogItems.forEach((blogItem) => {
-    const blogPos = blogItem.getBoundingClientRect().top;
-    console.log(blogPos);
-    if (winPos > blogPos) {
-      blogItem.classList.remove('blog-item-hidden');
+    const blogRevealItemTop = blogRevealItem.getBoundingClientRect().top;
+
+    if (blogRevealItemTop < windowHeight - 50) {
+      blogRevealItem.classList.add('active');
     }
+    //  else {
+    //   blogItem.classList.remove('active');
+    // }
   });
-});
+}
 
-// blogItems.forEach((blogItem) =>
-//   console.log(blogItem.getBoundingClientRect().top)
-// );
+window.addEventListener('scroll', reveal);

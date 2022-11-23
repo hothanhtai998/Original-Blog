@@ -1,6 +1,6 @@
 /* #### Content Area Start #### */
 #content-area {
-  padding-top: 100px;
+  padding-top: 50px;
   /* padding-bottom: 40px; */
 }
 
@@ -47,12 +47,14 @@
 
 /* ## Main content Area ## */
 /* Blog Area */
-.blog-item {
-  transition: transform 1s, opacity 1s;
-}
-.blog-item-hidden {
+.blog-reveal {
   opacity: 0;
   transform: translateY(100px);
+  transition: all 1s ease;
+}
+.blog-reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .blog-img {
   position: relative;
@@ -131,4 +133,49 @@
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+}
+
+.revealedBox-in.goTop {
+  animation: goTop linear 1.4s;
+}
+.revealedBox-in.goBottom {
+  animation: goBottom linear 1.4s;
+}
+
+@keyframes goTop {
+  from {
+    top: 100%;
+    bottom: 0;
+  }
+  40% {
+    top: 0;
+    bottom: 0;
+  }
+  60% {
+    top: 0;
+    bottom: 0;
+  }
+  to {
+    top: 0;
+    bottom: 100%;
+  }
+}
+
+@keyframes goBottom {
+  from {
+    top: 0;
+    bottom: 100%;
+  }
+  40% {
+    top: 0;
+    bottom: 0;
+  }
+  60% {
+    top: 0;
+    bottom: 0;
+  }
+  to {
+    top: 100%;
+    bottom: 0;
+  }
 }

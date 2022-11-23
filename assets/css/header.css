@@ -66,11 +66,66 @@
 }
 
 /* Navigation */
+.nav-container {
+  position: relative;
+}
 .nav-area {
   max-width: var(--max-width);
   margin: 0 auto;
 
   padding: 14px;
+}
+
+.nav-link {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  padding: 30px 0;
+  background-color: var(--white);
+  animation: slideRight linear 0.3s;
+  z-index: 99;
+}
+.nav-link li:hover .sub-nav {
+  display: block;
+}
+
+.nav-link li {
+  border-bottom: 1px solid rgba(242, 244, 248, 0.5);
+  padding: 3px 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.nav-link li:hover {
+  background-color: #d6d6d6;
+}
+
+.sub-nav {
+  position: absolute;
+  display: none;
+  top: 150px;
+  left: 0;
+  min-width: 180px;
+  background-color: var(--white);
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px 0px;
+  transition: all 0.3s ease 0s;
+  z-index: 999;
+}
+.sub-nav li {
+  line-height: 34px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+.sub-nav li:hover {
+  background-color: #464646;
 }
 
 .subscribe-btn {
@@ -145,5 +200,25 @@
 
   100% {
     transform: translateY(-24px);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-90%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-90%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

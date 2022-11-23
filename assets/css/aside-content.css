@@ -20,9 +20,8 @@
   color: #bbbec1;
   border: none;
   border-bottom: 1px solid #bbbec1;
-  outline: none;
 
-  padding: 12px 0;
+  padding: 12px;
 
   transition: all 0.5s ease 0s;
   transition-duration: 500ms;
@@ -30,7 +29,12 @@
 }
 .input-form:focus {
   color: var(--black);
+  border-radius: 2px;
   border-bottom: 1px solid var(--black);
+  outline: 1px solid var(--black);
+
+  transition: all 0.5s ease 0s;
+  transition-duration: 500ms;
 }
 .contact-form {
   position: relative;

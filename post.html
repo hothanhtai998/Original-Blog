@@ -29,6 +29,7 @@
     <script defer src="assets/js/socialicon.js"></script>
     <script defer src="assets/js/search.js"></script>
     <script defer src="assets/js/slider.js"></script>
+    <script defer src="assets/js/modal.js"></script>
     <!-- <script defer type="module" src="assets/js/index.js"></script> -->
   </head>
   <body>
@@ -86,13 +87,13 @@
           <nav class="nav-area">
             <button class="subscribe-btn">subscribe</button>
             <ul class="nav-link">
-              <li><a href="">Blog posts</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about-us.html">About us</a></li>
+              <li><a href="./contact.html">Contact</a></li>
               <li>
-                <a href="#">page</a>
+                <a class="active" href="#">page</a>
                 <ul class="sub-nav">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./about-us.html">About us</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="">Blog posts</a></li>
                 </ul>
               </li>
 
@@ -357,7 +358,25 @@
     <!-- #### Main content area end ####-->
 
     <!-- Subscribe modal -->
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="close-btn">x</div>
+        <div class="form-subscribe">
+          <form action="">
+            <label class="title" for="#email">Subscribe to my newsletter</label>
+            <input
+              type="email"
+              id="email"
+              class="input-form"
+              placeholder="Your E-mail here"
+              required
+            />
+            <button class="large-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- #### Footer area start ####-->
     <footer id="footer-area">

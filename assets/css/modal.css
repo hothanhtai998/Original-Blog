@@ -80,4 +80,82 @@
   transition-duration: 500ms;
 }
 .modal {
+  display: none;
+  justify-content: center;
+}
+.modal.open {
+  display: flex;
+  align-items: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #212529;
+  opacity: 0.7;
+  z-index: 9998;
+}
+.container {
+  position: fixed;
+  top: 170px;
+  background-color: var(--white);
+  z-index: 9999;
+  animation: slideDown linear 0.3s;
+}
+
+.form-subscribe {
+  width: 280px;
+  min-height: 200px;
+  padding: 30px;
+}
+.form-subscribe .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.form-subscribe .input-form {
+  border: 1px solid rgb(132, 132, 132);
+  font-style: italic;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+.close-btn {
+  position: absolute;
+  top: -28px;
+  right: 0;
+
+  font-weight: 700;
+
+  color: var(--white);
+  background-color: #cc0d0d;
+  opacity: 0.7;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  opacity: 1;
+}
+.slide-down {
+  animation: slideDown linear 0.2s;
+}
+
+.open-nav {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  cursor: pointer;
+  padding: 10px;
+  transform: translateY(-50%);
+}
+
+/* ####################################################################################### */
+@keyframes slideDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
