@@ -1,92 +1,32 @@
-/* #### Slider Area Start #### */
-#slider {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-left: -1000px;
-  margin-right: -1000px;
-}
-
-.slides {
-  width: 145px;
-  height: 250px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.slide-sub-title {
-  position: absolute;
-
-  animation: fadeInUp 1s ease 0s 1 normal both running;
-  top: 30%;
-  line-height: 15px;
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--black);
-  border-radius: 2px;
-  padding: 3px 10px;
-
-  transform: translateY(-30%);
-  transition: all 0.5s ease 0s;
-  transition-duration: 500ms;
-}
-
-.slide-main-title {
-  position: absolute;
-  top: 45%;
-  width: 5%;
-  line-height: 20px;
-
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--black);
-  z-index: 3;
-  padding: 4px;
-
-  animation: fadeInUp 1s ease 0s 1 normal both running;
-  transform: translateY(-45%);
-  transition: all 0.5s ease 0s;
-  transition-duration: 500ms;
-}
-
-.slider-btn-left,
-.slider-btn-right {
-  position: absolute;
-  width: 40px;
-  top: 63.5%;
-  line-height: 42px;
-  font-size: 20px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #cbcbcb;
-  border: none;
-  border-radius: 2px;
-  z-index: 2;
-
-  transition: all 0.5s ease 0s;
-  transition-duration: 500ms;
-}
-.slider-btn-left {
-  left: 7%;
-}
-.slider-btn-right {
-  right: 7%;
-}
-
-.slider-btn-left:hover,
-.slider-btn-right:hover {
-  background-color: #0d0d0d;
-  color: #ffffff;
-}
-
 /* #### Slider Area End #### */
+.swiper-slide {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.swiper {
+  height: 300px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .swiper {
+    height: 670px;
+  }
+}
+
+/* PC: */
+@media (min-width: 1200px) {
+  .swiper {
+    height: 670px;
+  }
+}

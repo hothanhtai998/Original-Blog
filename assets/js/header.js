@@ -24,7 +24,7 @@ const times = setInterval(() => {
 }, 1500);
 
 // xoá interval sau khi tải lại trang
-window.addEventListener('onunload', () => {
+window.addEventListener('unload', () => {
   clearInterval(times);
 });
 

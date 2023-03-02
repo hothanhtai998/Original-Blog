@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/modal.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <!-- Script -->
     <script defer src="assets/js/navbar.js"></script>
     <script defer src="assets/js/header.js"></script>
@@ -382,28 +385,69 @@
     <footer id="footer-area">
       <div class="instagram grid wide">
         <div class="heading"><h5>Follow us @ Instagram</h5></div>
-        <div class="list-image">
-          <img src="./assets/img/instagram-img/1.png" alt="ins1" />
-          <img src="./assets/img/instagram-img/2.png" alt="ins2" />
-          <img src="./assets/img/instagram-img/3.png" alt="ins3" />
-          <img src="./assets/img/instagram-img/4.png" alt="ins4" />
-          <img src="./assets/img/instagram-img/5.png" alt="ins5" />
-          <img src="./assets/img/instagram-img/6.png" alt="ins6" />
-          <img src="./assets/img/instagram-img/7.png" alt="ins7" />
+      </div>
+      <div class="swiper footerSwiper">
+        <div class="swiper-wrapper list-image">
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/1.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/2.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/3.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/4.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/5.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/6.png" alt="ins1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/img/instagram-img/7.png" alt="ins1" />
+          </div>
         </div>
-        <div class="copy-right">
-          <!-- <div class="social-icon col col-sm-12 col-md-4 col-lg-4">
-            <a><i class="fa-brands fa-pinterest"></i></a>
-            <a><i class="fa-brands fa-facebook-f"></i></a>
-            <a><i class="fab fa-twitter"></i></a>
-            <a><i class="fab fa-dribbble"></i></a>
-            <a><i class="fab fa-behance"></i></a>
-            <a><i class="fab fa-linkedin-in"></i></a>
-          </div> -->
-          Copyright ©2022 All rights reserved
+      </div>
+      <div class="copy-right">
+        <div class="social-icon col col-sm-12 col-md-4 col-lg-4">
+          <a><i class="fa-brands fa-pinterest"></i></a>
+          <a><i class="fa-brands fa-facebook-f"></i></a>
+          <a><i class="fab fa-twitter"></i></a>
+          <a><i class="fab fa-dribbble"></i></a>
+          <a><i class="fab fa-behance"></i></a>
+          <a><i class="fab fa-linkedin-in"></i></a>
         </div>
+        Copyright ©2022 All rights reserved
       </div>
     </footer>
     <!-- #### Footer area end ####-->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true,
+      });
+      const footerSwiper = new Swiper('.footerSwiper', {
+        slidesPerView: 7,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
   </body>
 </html>

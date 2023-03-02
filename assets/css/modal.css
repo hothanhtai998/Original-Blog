@@ -102,7 +102,7 @@
   top: 170px;
   background-color: var(--white);
   z-index: 9999;
-  animation: slideDown linear 0.3s;
+  animation: slideDown linear 1s;
 }
 
 .form-subscribe {
@@ -136,9 +136,9 @@
 .close-btn:hover {
   opacity: 1;
 }
-.slide-down {
-  animation: slideDown linear 0.2s;
-}
+/* .slide-down {
+  animation: slideDown linear 1s;
+} */
 
 .open-nav {
   position: absolute;
@@ -155,7 +155,7 @@
     top: 0;
   }
   to {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    transform: translateY(-40%);
   }
 }

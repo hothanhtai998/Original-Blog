@@ -11,11 +11,7 @@
   text-align: center;
   padding: 40px 0px;
 }
-.list-image {
-  width: 5000px;
-  margin-left: -250px;
-  margin-right: -250px;
-}
+
 .list-image img {
   width: 130px;
 }
